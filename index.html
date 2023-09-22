@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Kalkulator Aritmatika</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Kalkulator Aritmatika</h1>
+        <label for="operation">Pilih operasi:</label>
+        <select id="operation">
+            <option value="fibonacci">Deret Fibonacci</option>
+            <option value="volumeKubus">Volume Kubus</option>
+            <option value="volumeTabung">Volume Tabung</option>
+        </select>
+        <div id="fibonacciFields" class="input-fields">
+            <label for="fibonacciInput">Hitung Fibonacci ke-n:</label>
+            <input type="number" id="fibonacciInput">
+        </div>
+        <div id="volumeKubusFields" class="input-fields">
+            <label for="kubussisi1">Sisi 1:</label>
+            <input type="number" id="kubussisi1">
+            <label for="kubussisi2">Sisi 2:</label>
+            <input type="number" id="kubussisi2">
+            <label for="kubussisi3">Sisi 3:</label>
+            <input type="number" id="kubussisi3">
+        </div>
+        <div id="volumeTabungFields" class="input-fields">
+            <label for="tabungJari">Jari-Jari:</label>
+            <input type="number" id="tabungJari">
+            <label for="tabungTinggi">Tinggi:</label>
+            <input type="number" id="tabungTinggi">
+        </div>
+        <button onclick="calculate()">Hitung</button>
+        <p id="result">Hasil:</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
